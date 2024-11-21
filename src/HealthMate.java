@@ -63,7 +63,12 @@ public class HealthMate {
             for (int i = 0; i < contadorPacientes; i++) {
                 Paciente paciente = pacientes[i];
                 System.out.printf("%d. %s %s - Edad: %d, Peso: %dkg, Altura: %dcm, Sexo: %s\n",
-                        i + 1, paciente.nombre, paciente.apellido, paciente.edad, paciente.peso, paciente.altura, paciente.sexo);
+                        i + 1, paciente.nombre,
+                                paciente.apellido,
+                                paciente.edad,
+                                paciente.peso,
+                                paciente.altura,
+                                paciente.sexo);
             }
         }
 
@@ -86,7 +91,7 @@ public class HealthMate {
             System.out.println("Paciente no encontrado.");
         }
 
-                // clase principal del proyecto .
+                // *clase principal del proyecto* .
              public static void main(String[] args) {
                SistemaMedico sistema = new SistemaMedico(12);
                     Scanner Input = new Scanner(System.in);
@@ -119,6 +124,7 @@ public class HealthMate {
                              System.out.println("3-Calcular calorías diarias");
                              System.out.println("4-Medir frecuencia cardíaca ideal para ejercicio");
                              System.out.println("5-Calcular consumo de agua diaria");
+                             System.out.println("6-Modificar datos pacientes");
                              System.out.println("7-Salir al menú principal");
 
                             int opcionPaciente = Input.nextInt();
@@ -141,7 +147,7 @@ public class HealthMate {
                                 System.out.println("Saliendo al menú principal");
                                 break;
                             } else {
-                                System.out.println("Error, opcion no valida");
+                                System.out.println("Seleccione otra opcion porfavor");
                             }
                         }
                     } else {
